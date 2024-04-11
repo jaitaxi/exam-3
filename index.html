@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>API Calls</title>
+</head>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+  }
+
+  #box {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 20px;
+  }
+
+  .data {
+    background-color: #f8f8f8;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 10px;
+    transition: background-color 0.3s ease;
+  }
+
+  .data:hover {
+    background-color: #e0e0e0;
+  }
+
+  h4 {
+    margin-top: 0;
+  }
+
+  h1 {
+    font-size: 1.2em;
+    margin-bottom: 5px;
+  }
+
+  p {
+    margin: 5px 0;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+  }
+
+  button {
+    margin: 5px;
+    padding: 8px 16px;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 10px;
+    border: none;
+  }
+
+  form {
+    margin: 10px;
+  }
+  input[type=text]{
+    height: 20px;
+    border-radius: 30px;
+  }
+  .btn {
+    padding: 8px 16px;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 10px;
+    border: 1px solid black;
+  }
+
+</style>
+
+<body>
+
+  <button id="htl">High to Low</button>
+  <button id="lth">Low to High</button>
+  <button id="men's clothing">Men's clothing</button>
+  <button id="women's clothing">Women's clothing</button>
+  <button id="jewelery">Jewelery</button>
+  <button id="electronics">Electronics</button>
+
+
+  <form id="search" style="display: inline;">
+    <input type="text" id="value" placeholder="Search By Category...">
+    <input type="submit" class="btn" value="Search">
+  </form>
+
+  <div id="box"></div>
+
+  <script src="./index.js"></script>
+</body>
+
+</html>
